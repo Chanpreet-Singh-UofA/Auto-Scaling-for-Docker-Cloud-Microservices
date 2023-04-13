@@ -1,0 +1,26 @@
+(base) chanpreet@Chanpreets-MacBook-Pro 422-reliability % scp -i manager.pem -r ECE422-Proj2-StartKit/autoScaler.py ubuntu@10.2.1.38\:
+
+(base) chanpreet@Chanpreets-MacBook-Pro 422-reliability % scp -i manager.pem ubuntu@10.2.1.38:/home/ubuntu/plots.png /Users/chanpreet/Desktop/422-reliability
+
+
+
+ubuntu@client-vm3:~$ sudo docker stack deploy --compose-file docker-compose.yml app_name
+
+ubuntu@client-vm:~$ python3.6 http_client.py 10.2.1.38  20 1
+
+
+
+ sudo docker service scale app_name_web=1
+sudo docker service ls
+
+
+
+
+manager
+ssh -i manager.pem ubuntu@2605:fd00:4:1001:f816:3eff:fe1c:6b08
+
+scp username@remote_host:/path/to/workload.png /path/to/local/directory
+
+
+client
+ssh -i r1.pem ubuntu@2605:fd00:4:1001:f816:3eff:fecf:5a5a
